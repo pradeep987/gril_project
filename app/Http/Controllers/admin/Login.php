@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\admin;
 
+
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Repository\admin\LoginRepository;
@@ -62,44 +63,44 @@ class Login extends Controller
 									"productModel" => array("Product Model", "admin/productModel", "icon-bar-chart"),
 									);
                 $sideBar["WholeSale"] = array(
-									"WholeSalebusinessCategroy" => array("Business Categroy", "admin/wholesale/businessCategroy", "icon-bar-chart"),
-									"WholeSalebusinessType" => array("Business Type", "admin/wholesale/businessType", "icon-bar-chart"),
-									"WholeSaleproductType" => array("Product Type", "admin/wholesale/productType", "icon-bar-chart"),
-									"WholeSaleproductModel" => array("Product Model", "admin/wholesale/productModel", "icon-bar-chart"),
+									"wholesalebusinessCategroy" => array("Business Categroy", "admin/wholesale/wholesalebusinessCategroy", "icon-bar-chart"),
+									"wholesalebusinessType" => array("Business Type", "admin/wholesale/wholesalebusinessType", "icon-bar-chart"),
+									"wholesaleproductType" => array("Product Type", "admin/wholesale/wholesaleproductType", "icon-bar-chart"),
+									"wholesaleproductModel" => array("Product Model", "admin/wholesale/wholesaleproductModel", "icon-bar-chart"),
 									);
 								
 			    $sideBar["Hire Or Rental"] = array(
-									"HirebusinessCategroy" => array("Business Categroy", "admin/hire/businessCategroy", "icon-bar-chart"),
-									"HirebusinessType" => array("Business Type", "admin/hire/businessType", "icon-bar-chart"),
-									"HireproductType" => array("Product Type", "admin/hire/productType", "icon-bar-chart"),
-									"HireproductModel" => array("Product Model", "admin/hire/productModel", "icon-bar-chart"),
+									"HirebusinessCategroy" => array("Business Categroy", "admin/hire/HirebusinessCategroy", "icon-bar-chart"),
+									"HirebusinessType" => array("Business Type", "admin/hire/HirebusinessType", "icon-bar-chart"),
+									"HireproductType" => array("Product Type", "admin/hire/HireproductType", "icon-bar-chart"),
+									"HireproductModel" => array("Product Model", "admin/hire/HireproductModel", "icon-bar-chart"),
 									);
 
                 
                 $sideBar["Importer"] = array(
-									"ImporterbusinessCategroy" => array("Business Categroy", "admin/importer/businessCategroy", "icon-bar-chart"),
-									"ImporterbusinessType" => array("Business Type", "admin/importer/businessType", "icon-bar-chart"),
-									"ImporterproductType" => array("Product Type", "admin/importer/productType", "icon-bar-chart"),
-									"ImporterproductModel" => array("Product Model", "admin/importer/productModel", "icon-bar-chart"),
+									"ImporterbusinessCategroy" => array("Business Categroy", "admin/importer/ImporterbusinessCategroy", "icon-bar-chart"),
+									"ImporterbusinessType" => array("Business Type", "admin/importer/ImporterbusinessType", "icon-bar-chart"),
+									"ImporterproductType" => array("Product Type", "admin/importer/ImporterproductType", "icon-bar-chart"),
+									"ImporterproductModel" => array("Product Model", "admin/importer/ImporterproductModel", "icon-bar-chart"),
 									);
 									
 				$sideBar["Exporter"] = array(
-									"ExporterbusinessCategroy" => array("Business Categroy", "admin/exporter/businessCategroy", "icon-bar-chart"),
-									"ExporterbusinessType" => array("Business Type", "admin/exporter/businessType", "icon-bar-chart"),
-									"ExporterproductType" => array("Product Type", "admin/exporter/productType", "icon-bar-chart"),
-									"ExporterproductModel" => array("Product Model", "admin/exporter/productModel", "icon-bar-chart"),
+									"ExporterbusinessCategroy" => array("Business Categroy", "admin/exporter/ExporterbusinessCategroy", "icon-bar-chart"),
+									"ExporterbusinessType" => array("Business Type", "admin/exporter/ExporterbusinessType", "icon-bar-chart"),
+									"ExporterproductType" => array("Product Type", "admin/exporter/ExporterproductType", "icon-bar-chart"),
+									"ExporterproductModel" => array("Product Model", "admin/exporter/ExporterproductModel", "icon-bar-chart"),
 									);
                 $sideBar["Manufacture"] = array(
-									"ManufacturebusinessCategroy" => array("Business Categroy", "admin/manufacture/businessCategroy", "icon-bar-chart"),
-									"ManufacturebusinessType" => array("Business Type", "admin/manufacture/businessType", "icon-bar-chart"),
-									"ManufactureproductType" => array("Product Type", "admin/manufacture/productType", "icon-bar-chart"),
-									"ManufactureproductModel" => array("Product Model", "admin/manufacture/productModel", "icon-bar-chart"),
+									"ManufacturebusinessCategroy" => array("Business Categroy", "admin/manufacture/ManufacturebusinessCategroy", "icon-bar-chart"),
+									"ManufacturebusinessType" => array("Business Type", "admin/manufacture/ManufacturebusinessType", "icon-bar-chart"),
+									"ManufactureproductType" => array("Product Type", "admin/manufacture/ManufactureproductType", "icon-bar-chart"),
+									"ManufactureproductModel" => array("Product Model", "admin/manufacture/ManufactureproductModel", "icon-bar-chart"),
 									);
                 $sideBar["Service Provider"] = array(
-									"ServiceProviderbusinessCategroy" => array("Business Categroy", "admin/serviceprovider/businessCategroy", "icon-bar-chart"),
-									"ServiceProviderbusinessType" => array("Business Type", "admin/serviceprovider/businessType", "icon-bar-chart"),
-									"ServiceProviderproductType" => array("Product Type", "admin/serviceprovider/productType", "icon-bar-chart"),
-									"ServiceProviderproductModel" => array("Product Model", "admin/serviceprovider/productModel", "icon-bar-chart"),
+									"ServiceProviderbusinessCategroy" => array("Business Categroy", "admin/serviceprovider/ServiceProviderbusinessCategroy", "icon-bar-chart"),
+									"ServiceProviderbusinessType" => array("Business Type", "admin/serviceprovider/ServiceProviderbusinessType", "icon-bar-chart"),
+									"ServiceProviderproductType" => array("Product Type", "admin/serviceprovider/ServiceProviderproductType", "icon-bar-chart"),
+									"ServiceProviderproductModel" => array("Product Model", "admin/serviceprovider/ServiceProviderproductModel", "icon-bar-chart"),
 									);
 					
 					

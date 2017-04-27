@@ -69,6 +69,13 @@ Route::group(['middleware' => ['web']], function () {
 Route::get('/admin', function () {return view('admin.login');});
 Route::group(['middleware' => 'sessionCheck'], function () {
 	Route::get('/admin/logout', 'Admin\Login@logout');
+	Route::get('/admin/wholesale/logout', 'Admin\Login@logout');
+	Route::get('/admin/hire/logout', 'Admin\Login@logout');
+	Route::get('/admin/importer/logout', 'Admin\Login@logout');
+	Route::get('/admin/exporter/logout', 'Admin\Login@logout');
+	Route::get('/admin/manufacture/logout', 'Admin\Login@logout');
+	Route::get('/admin/serviceprovider/logout', 'Admin\Login@logout');
+	
 	Route::get('/admin/country', function () {return view('admin.country');});
 	Route::get('admin/getAllCountryList', 'Admin\Country@getAllCountryList');
 
@@ -90,69 +97,69 @@ Route::group(['middleware' => 'sessionCheck'], function () {
 	
 	
 	//--hire start--
-    Route::get('/admin/hire/businessCategroy', function () {return view('admin.hire.businessCategroy');});
+    Route::get('/admin/hire/HirebusinessCategroy', function () {return view('admin.hire.businessCategroy');});
     Route::get('admin/hire/getAllBusinessCategroyList', 'Admin\hire\BusinessCategroy@getAllBusinessCategroyList');
-    Route::get('/admin/hire/businessType', function () {return view('admin.hire.businessType');});
+    Route::get('/admin/hire/HirebusinessType', function () {return view('admin.hire.businessType');});
     Route::get('admin/hire/getAllBusinessTypeList', 'Admin\hire\BusinessType@getAllBusinessTypeList');
-    Route::get('/admin/hire/productType', function () {return view('admin.hire.productType');});
+    Route::get('/admin/hire/HireproductType', function () {return view('admin.hire.productType');});
     Route::get('admin/hire/getAllProductTypeList', 'Admin\hire\ProductType@getAllProductTypeList'); 
-    Route::get('/admin/hire/productModel', function () {return view('admin.hire.productModel');});
+    Route::get('/admin/hire/HireproductModel', function () {return view('admin.hire.productModel');});
     Route::get('admin/hire/getAllProductModelList', 'Admin\hire\ProductModel@getAllProductModelList');
     //--hire end--
     
    //--manufacture start--
-    Route::get('/admin/manufacture/businessCategroy', function () {return view('admin.manufacture.businessCategroy');});
+    Route::get('/admin/manufacture/ManufacturebusinessCategroy', function () {return view('admin.manufacture.businessCategroy');});
     Route::get('admin/manufacture/getAllBusinessCategroyList', 'Admin\manufacture\BusinessCategroy@getAllBusinessCategroyList');
-     Route::get('/admin/manufacture/businessType', function () {return view('admin.manufacture.businessType');});
+     Route::get('/admin/manufacture/ManufacturebusinessType', function () {return view('admin.manufacture.businessType');});
     Route::get('admin/manufacture/getAllBusinessTypeList', 'Admin\manufacture\BusinessType@getAllBusinessTypeList');
-    Route::get('/admin/manufacture/productType', function () {return view('admin.manufacture.productType');});
+    Route::get('/admin/manufacture/ManufactureproductType', function () {return view('admin.manufacture.productType');});
     Route::get('admin/manufacture/getAllProductTypeList', 'Admin\manufacture\ProductType@getAllProductTypeList'); 
-     Route::get('/admin/manufacture/productModel', function () {return view('admin.manufacture.productModel');});
+     Route::get('/admin/manufacture/ManufactureproductModel', function () {return view('admin.manufacture.productModel');});
     Route::get('admin/manufacture/getAllProductModelList', 'Admin\manufacture\ProductModel@getAllProductModelList');
     // --manufacture end--
     
     
     //--serviceprovider start--
-    Route::get('/admin/serviceprovider/businessCategroy', function () {return view('admin.serviceprovider.businessCategroy');});
+    Route::get('/admin/serviceprovider/ServiceProviderbusinessCategroy', function () {return view('admin.serviceprovider.businessCategroy');});
     Route::get('admin/serviceprovider/getAllBusinessCategroyList', 'Admin\serviceprovider\BusinessCategroy@getAllBusinessCategroyList');
-    Route::get('/admin/serviceprovider/businessType', function () {return view('admin.serviceprovider.businessType');});
+    Route::get('/admin/serviceprovider/ServiceProviderbusinessType', function () {return view('admin.serviceprovider.businessType');});
     Route::get('admin/serviceprovider/getAllBusinessTypeList', 'Admin\serviceprovider\BusinessType@getAllBusinessTypeList');
-    Route::get('/admin/serviceprovider/productType', function () {return view('admin.serviceprovider.productType');});
+    Route::get('/admin/serviceprovider/ServiceProviderproductType', function () {return view('admin.serviceprovider.productType');});
     Route::get('admin/serviceprovider/getAllProductTypeList', 'Admin\serviceprovider\ProductType@getAllProductTypeList'); 
-    Route::get('/admin/serviceprovider/productModel', function () {return view('admin.serviceprovider.productModel');});
+    Route::get('/admin/serviceprovider/ServiceProviderproductModel', function () {return view('admin.serviceprovider.productModel');});
     Route::get('admin/serviceprovider/getAllProductModelList', 'Admin\serviceprovider\ProductModel@getAllProductModelList');
     //--serviceprovider end--
      
     //--wholesale start--
-    Route::get('/admin/wholesale/businessCategroy', function () {return view('admin.wholesale.businessCategroy');});
+    Route::get('/admin/wholesale/wholesalebusinessCategroy', function () {return view('admin.wholesale.businessCategroy');});
     Route::get('admin/wholesale/getAllBusinessCategroyList', 'Admin\wholesale\BusinessCategroy@getAllBusinessCategroyList');
-    Route::get('/admin/wholesale/businessType', function () {return view('admin.wholesale.businessType');});
+    Route::get('/admin/wholesale/wholesalebusinessType', function () {return view('admin.wholesale.businessType');});
     Route::get('admin/wholesale/getAllBusinessTypeList', 'Admin\wholesale\BusinessType@getAllBusinessTypeList');
-    Route::get('/admin/wholesale/productType', function () {return view('admin.wholesale.productType');});
+    Route::get('/admin/wholesale/wholesaleproductType', function () {return view('admin.wholesale.productType');});
     Route::get('admin/wholesale/getAllProductTypeList', 'Admin\wholesale\ProductType@getAllProductTypeList'); 
-    Route::get('/admin/wholesale/productModel', function () {return view('admin.wholesale.productModel');});
+    Route::get('/admin/wholesale/wholesaleproductModel', function () {return view('admin.wholesale.productModel');});
     Route::get('admin/wholesale/getAllProductModelList', 'Admin\wholesale\ProductModel@getAllProductModelList');
     //--wholesale end--
     
    //--importer  preview start--
-    Route::get('/admin/importer/businessCategroy', function () {return view('admin.importer.businessCategroy');});
+    Route::get('/admin/importer/ImporterbusinessCategroy', function () {return view('admin.importer.businessCategroy');});
     Route::get('admin/importer/getAllBusinessCategroyList', 'Admin\importer\BusinessCategroy@getAllBusinessCategroyList');
-    Route::get('/admin/importer/businessType', function () {return view('admin.importer.businessType');});
+    Route::get('/admin/importer/ImporterbusinessType', function () {return view('admin.importer.businessType');});
     Route::get('admin/importer/getAllBusinessTypeList', 'Admin\importer\BusinessType@getAllBusinessTypeList');
-    Route::get('/admin/importer/productType', function () {return view('admin.importer.productType');});
+    Route::get('/admin/importer/ImporterproductType', function () {return view('admin.importer.productType');});
     Route::get('admin/importer/getAllProductTypeList', 'Admin\importer\ProductType@getAllProductTypeList'); 
-    Route::get('/admin/importer/productModel', function () {return view('admin.importer.productModel');});
+    Route::get('/admin/importer/ImporterproductModel', function () {return view('admin.importer.productModel');});
     Route::get('admin/importer/getAllProductModelList', 'Admin\importer\ProductModel@getAllProductModelList');
     // --importer  preview businesstype  end--
     
     //--exporter  preview start--
-    Route::get('/admin/exporter/businessCategroy', function () {return view('admin.exporter.businessCategroy');});
+    Route::get('/admin/exporter/ExporterbusinessCategroy', function () {return view('admin.exporter.businessCategroy');});
     Route::get('admin/exporter/getAllBusinessCategroyList', 'Admin\exporter\BusinessCategroy@getAllBusinessCategroyList');
-    Route::get('/admin/exporter/businessType', function () {return view('admin.exporter.businessType');});
+    Route::get('/admin/exporter/ExporterbusinessType', function () {return view('admin.exporter.businessType');});
     Route::get('admin/exporter/getAllBusinessTypeList', 'Admin\exporter\BusinessType@getAllBusinessTypeList');
-    Route::get('/admin/exporter/productType', function () {return view('admin.exporter.productType');});
+    Route::get('/admin/exporter/ExporterproductType', function () {return view('admin.exporter.productType');});
     Route::get('admin/exporter/getAllProductTypeList', 'Admin\exporter\ProductType@getAllProductTypeList'); 
-    Route::get('/admin/exporter/productModel', function () {return view('admin.exporter.productModel');});
+    Route::get('/admin/exporter/ExporterproductModel', function () {return view('admin.exporter.productModel');});
     Route::get('admin/exporter/getAllProductModelList', 'Admin\exporter\ProductModel@getAllProductModelList');
     // --exporter preview end--
     

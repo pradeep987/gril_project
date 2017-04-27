@@ -14,7 +14,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="m-heading-1 border-green m-bordered">
-                                <h3>Product Type</h3>
+                                <h3>Manufacture Product Type</h3>
                                 <p>Product Type master Page</p>
                              </div>
                             <div class="portlet light bordered" id="form_wizard_1">

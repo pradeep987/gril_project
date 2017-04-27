@@ -1,13 +1,11 @@
-<?php echo $__env->make("admin.header", array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
-;
+<?php echo $__env->make("admin.header", array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>;
 <!-- BEGIN HEADER & CONTENT DIVIDER -->
 <div class="clearfix"></div>
 <!-- END HEADER & CONTENT DIVIDER -->
 <!-- BEGIN CONTAINER -->
 <div
 	class="page-container" ng-controller="productTypeCtrl">
-	<?php echo $__env->make("admin.sidebar", array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
-	;
+	<?php echo $__env->make("admin.sidebar", array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>;
 	<!-- BEGIN CONTENT -->
 	<div class="page-content-wrapper">
 		<!-- BEGIN CONTENT BODY -->
@@ -16,7 +14,7 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="m-heading-1 border-green m-bordered">
-						<h3>Product Type</h3>
+						<h3>Retail Product Type</h3>
 						<p>Product Type master Page</p>
 					</div>
 					<div class="portlet light bordered" id="form_wizard_1">
@@ -244,7 +242,7 @@
 	<!-- END QUICK SIDEBAR -->
 </div>
 <!-- END CONTAINER -->
-	<?php echo $__env->make("admin.footer", array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+<?php echo $__env->make("admin.footer", array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 <script
 	src="<?= asset('app/controllers/admin/productType.js') ?>"></script>
 </body>

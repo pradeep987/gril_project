@@ -3,7 +3,7 @@
 	<div class="clearfix"> </div>
 	<!-- END HEADER & CONTENT DIVIDER -->
 	<!-- BEGIN CONTAINER -->
-	gfhfghf
+	
 	<div class="page-container" ng-controller="businessCategroyCtrl">
 		@include("admin.sidebar");
 		<!-- BEGIN CONTENT -->
@@ -14,7 +14,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="m-heading-1 border-green m-bordered">
-                                <h3>Business Categroy</h3>
+                                <h3>Wholesale Business Categroy</h3>
                                 <p>Business Categroy master Page</p>
                              </div>
                             <div class="portlet light bordered" id="form_wizard_1">
