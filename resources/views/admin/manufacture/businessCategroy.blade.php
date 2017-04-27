@@ -3,6 +3,7 @@
 	<div class="clearfix"> </div>
 	<!-- END HEADER & CONTENT DIVIDER -->
 	<!-- BEGIN CONTAINER -->
+	
 	<div class="page-container" ng-controller="businessCategroyCtrl">
 		@include("admin.sidebar");
 		<!-- BEGIN CONTENT -->
