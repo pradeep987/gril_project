@@ -58,7 +58,7 @@ class Login extends Controller
 
 	public function logout(){
 		Session::flush();
-		return Redirect::to('admin');
+		return Redirect::to('login');
 	}
 
 	public function sendForgetPwdMail(LoginRepository $login_repository, Request $request){
