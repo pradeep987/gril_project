@@ -267,7 +267,7 @@
                                                                 <span class="required"> * </span>
                                                             </label>  
                                                        <div class="col-md-4" ng-class="productInformation.ProductOfferValidTo.$dirty ? (productInformation.ProductOfferValidTo.$valid ? 'has-success' : 'has-error') : ''">
-                                                                <input type="text" class="form-control" name="ProductOfferValidTo" placeholder="yyyy-mm-dd" ng-model="customer.save.ProductOfferValidTo"  required/>
+                                                                <input type="text" ng-disabled="!customer.save.ProductOfferValidFrom" class="form-control" name="ProductOfferValidTo" placeholder="yyyy-mm-dd" ng-model="customer.save.ProductOfferValidTo"  required/>
 																<span ng-show="productInformation.ProductOfferValidTo.$error.required || productInformation.ProductOfferValidTo.$valid" class="help-block"> Product Offer Valid To Details </span>
 															    
                                                             </div>
@@ -767,7 +767,7 @@
 														<div class="col-md-offset-3 col-md-9">
 															<button type="button" ng-click="navTab(1)"
 																class="btn btn-info">Back</button>
-															<button type="button" ng-disabled="!(productInformation.provideNames.$valid && productInformation.provideProductName.$valid && productInformation.ProductOfferPrice.$valid && productInformation.ProductOfferInPercentage.$valid && productInformation.Productdiscriptions.$valid && productInformation.Terms.$valid && productInformation.ProductReturnPolicy.$valid && productInformation.ProductWarenty.$valid && productInformation.ProductPackageQuantityDetails.$valid && productInformation.BrandNumber.$valid && productInformation.BrandModelName && productInformation.StockInHand.$valid && productInformation.StockNotifications.$valid && productInformation.ServiceCharges.$valid && productInformation.ProductWeight.$valid && productInformation.localdelivarycharges.$valid && productInformation.LocalPostalCodes.$valid && productInformation.OtherPlacesDeliveryCharges.$valid && productInformation.OtherPostalCodes.$valid)" ng-click="navTab(3)" class="btn btn-info">Continue</button>
+															<button type="button" ng-disabled="!(!productInformation.$error.required && !productInformation.$error.pattern && !productInformation.$error.maxlength && !productInformation.$error.minlength)" ng-click="navTab(3)" class="btn btn-info">Continue</button>
 														</div>
 													</div>
                                                   </form>

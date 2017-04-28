@@ -14,6 +14,8 @@
 Route::get('/', function (){return view('user.registration');});
 Route::get('/login', function (){return view('user.login');});
 Route::get('/getBussinessModel', 'GetDropDownData@getBussinessModel');
+
+
 Route::post('getCityState', 'user\UserRegistation@getCityState');
 
 Route::group(['middleware' => ['web']], function () {
@@ -317,5 +319,63 @@ Route::get('addwholesellerProducts', function () {return view('dashboard.wholesa
 Route::get('addretailProducts', function () {return view('dashboard.addRetailProducts');});
 
 
+
+
+Route::get('/home-3', function () {return view('home.Envato.index');});
+Route::get('/Envato/signup', function () {return view('home.Envato.signup');});
+Route::get('/Envato/about', function () {return view('home.Envato.about');});
+Route::get('/Envato/contact', function () {return view('home.Envato.contact');});
+Route::get('/Envato/blog', function () {return view('home.Envato.blog');});
+Route::get('/Envato/blog-single', function () {return view('home.Envato.blog-single');});
+Route::get('/Envato/cart', function () {return view('home.Envato.cart');});
+Route::get('/Envato/home-2', function () {return view('home.Envato.home-2');});
+Route::get('/Envato/home-3', function () {return view('home.Envato.home-3');});
+Route::get('/Envato/index-2', function () {return view('home.Envato.index-2');});
+Route::get('/Envato/product-listing', function () {return view('home.Envato.product-listing');});
+Route::get('/Envato/product-quick-view', function () {return view('home.Envato.product-quick-view');});
+Route::get('/Envato/products', function () {return view('home.Envato.products');});
+Route::get('/Envato/product-single', function () {return view('home.Envato.product-single');});
+Route::get('/Envato/index13', function () {return view('home.Envato.index13');});
+Route::get('/Envato/index12', function () {return view('home.Envato.index12');});
+Route::get('/Envato/index11', function () {return view('home.Envato.index11');});
+Route::get('/Envato/index10', function () {return view('home.Envato.index10');});
+
+
+Route::get('/home-2', function () {return view('home.Kuti.index');});
+Route::get('/Kuti/blog', function () {return view('home.Kuti.blog');});
+Route::get('/Kuti/cart', function () {return view('home.Kuti.cart');});
+Route::get('/Kuti/category-grid', function () {return view('home.Kuti.category-grid');});
+Route::get('/Kuti/category-grid2', function () {return view('home.Kuti.category-grid2');});
+Route::get('/Kuti/category-list', function () {return view('home.Kuti.category-list');});
+Route::get('/Kuti/category-list2', function () {return view('home.Kuti.category-list2');});
+Route::get('/Kuti/checkout', function () {return view('home.Kuti.checkout');});
+Route::get('/Kuti/compare', function () {return view('home.Kuti.compare');});
+Route::get('/Kuti/login', function () {return view('home.Kuti.login');});
+Route::get('/Kuti/post', function () {return view('home.Kuti.post');});
+Route::get('/Kuti/wishlist', function () {return view('home.Kuti.wishlist');});
+
+
+
+Route::get('/home-1', function () {return view('home.Lotus.home');});
+Route::get('/Lotus/404', function () {return view('home.Lotus.404');});
+Route::get('/Lotus/blog', function () {return view('home.Lotus.blog');});
+Route::get('/Lotus/blog-details', function () {return view('home.Lotus.blog-details');});
+Route::get('/Lotus/category', function () {return view('home.Lotus.category');});
+Route::get('/Lotus/checkout', function () {return view('home.Lotus.checkout');});
+Route::get('/Lotus/contact', function () {return view('home.Lotus.contact');});
+Route::get('/Lotus/contact-us', function () {return view('home.Lotus.contact-us');});
+Route::get('/Lotus/detail', function () {return view('home.Lotus.detail');});
+Route::get('/Lotus/faq', function () {return view('home.Lotus.faq');});
+Route::get('/Lotus/index6c11', function () {return view('home.Lotus.index6c11');});
+Route::get('/Lotus/index8a95', function () {return view('home.Lotus.index8a95');});
+Route::get('/Lotus/my-wishlist', function () {return view('home.Lotus.my-wishlist');});
+Route::get('/Lotus/product-comparison', function () {return view('home.Lotus.product-comparison');});
+Route::get('/Lotus/shopping-cart', function () {return view('home.Lotus.shopping-cart');});
+Route::get('/Lotus/sign-in', function () {return view('home.Lotus.sign-in');});
+Route::get('/Lotus/terms-conditions', function () {return view('home.Lotus.terms-conditions');});
+Route::get('/Lotus/track-orders', function () {return view('home.Lotus.track-orders');});
+Route::get('/Lotus/switchstylesheet', function () {return view('home.Lotus.switchstylesheet');});
+Route::get('/Lotus/Dress', function () {return view('home.Lotus.Dress');});
+Route::get('/Lotus/cartt', function () {return view('home.Lotus.cartt');});
 
 

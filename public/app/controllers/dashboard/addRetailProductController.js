@@ -19,6 +19,12 @@ app.controller('AddRetailProductCtrl', ['$scope','CustomerService', function($sc
     Catagary: '',  
     SubCatagary: ''
   };
+    
+    $scope.$watch('customer.save.ProductOfferValidFrom', function () {
+    if($scope.customer.save.ProductOfferValidFrom == undefined){
+        $scope.customer.save.ProductOfferValidTo = "";
+    }
+    });
   $scope.maincatagaris = CustomerService.getMainCatagary();
     
   $scope.getMainCatagaryCatagarys = function(){
